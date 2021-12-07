@@ -1,0 +1,12 @@
+<launch>
+  <arg name="port" default="/dev/ttyUSB0" doc="serial port to use"/>
+  <arg name="frame_id" default="base_link" doc="frame_id for scan msg"/>
+  <arg name="scan_topic" default="scan" doc="topic for scan msg"/>
+
+  <remap from="scan" to="$(arg scan_topic)"/>
+
+  <node pkg="ldlidar_nos" type="ldlidar_nos_node" name="ld06" output="screen">
+    <param name="port" value="$(arg port)"/>
+    <param name="frame_id" value="$(arg frame_id)"/>
+  </node>
+</launch>

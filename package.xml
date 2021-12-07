@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>ldlidar_nos</name>
+  <version>1.0.0</version>
+  <description>The ldlidar_nos package</description>
+  <maintainer email="nsch0eCode@gmail.com">nsch0e</maintainer>
+  <license>MIT</license>
+
+  <!-- <url type="website">http://wiki.ros.org/ldlidar_nos</url> -->
+
+  <depend>roscpp</depend>
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <export>
+  </export>
+</package>
